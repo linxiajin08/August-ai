@@ -37,7 +37,7 @@ class App(tk.Tk):
         self.url_label = tk.Label(self, text='模型 URL:')
         self.url_label.grid(row=0, column=0, padx=10, pady=5, sticky='e')
         self.url_entry = tk.Entry(self)
-        self.url_entry.insert(0, 'https://api.ciallo.ac.cn/v1')
+        self.url_entry.insert(0, 'https://api.siliconflow.cn/v1')
         self.url_entry.grid(row=0, column=1, padx=10, pady=5, sticky='ew')
 
         # API 模型名称输入框
@@ -67,8 +67,11 @@ class App(tk.Tk):
         self.bluetooth_button.pack(side='left', padx=5)
 
         # 保存配置按钮
-        self.save_button = tk.Button(self.button_frame, text='保存配置', command=self.save_config)
-        self.save_button.pack(side='left', padx=5)
+        self.save_button = tk.Button(self.button_frame, text='保存配置', command=self.save_config)        self.save_button.pack(side='left', padx=5)
+        
+        # 获取API按钮
+        self.get_api_button = tk.Button(self.button_frame, text='获取API', command=self.open_api_url)
+        self.get_api_button.pack(side='left', padx=5)
 
 
 
@@ -205,6 +208,10 @@ class App(tk.Tk):
         engine.setProperty('output_device', new_device)
         messagebox.showinfo('蓝牙状态', f'已切换到 {new_device}')
 
+    def open_api_url(self):
+        import webbrowser
+        webbrowser.open('https://cloud.siliconflow.cn/i/QOxdzxkd')
+        
     def save_config(self):
         config = {
             'api_url': self.url_entry.get(),

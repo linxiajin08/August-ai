@@ -48,6 +48,11 @@ run.bat
 python ui_app.py
 ```
 
+## 获取API
+
+点击界面上的"获取API"按钮或直接访问以下网址获取API服务：
+https://cloud.siliconflow.cn/i/QOxdzxkd
+
 或者直接使用run.bat批处理文件自动完成所有步骤
 
 ## 注意事项
