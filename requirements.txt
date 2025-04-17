@@ -1,0 +1,4 @@
+speech-recognition
+requests
+pyttsx3
+tkinter
