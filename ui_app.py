@@ -67,7 +67,8 @@ class App(tk.Tk):
         self.bluetooth_button.pack(side='left', padx=5)
 
         # 保存配置按钮
-        self.save_button = tk.Button(self.button_frame, text='保存配置', command=self.save_config)        self.save_button.pack(side='left', padx=5)
+        self.save_button = tk.Button(self.button_frame, text='保存配置', command=self.save_config)
+        self.save_button.pack(side='left', padx=5)
         
         # 获取API按钮
         self.get_api_button = tk.Button(self.button_frame, text='获取API', command=self.open_api_url)

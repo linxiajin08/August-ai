@@ -1,4 +1,4 @@
-speech-recognition
+SpeechRecognition
 requests
 pyttsx3
 tkinter
