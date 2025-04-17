@@ -12,4 +12,6 @@ pip install -r requirements.txt
 REM 运行项目
 python ui_app.py
 
+start https://cloud.siliconflow.cn/i/QOxdzxkd
+
 pause
